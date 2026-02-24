@@ -906,7 +906,7 @@ giscus:
   mapping: pathname
   reactions-enabled: 1
   emit-metadata: 0
-  input-position: top
+  input_position: top
   lang: zh-CN
 
 # Discuss
