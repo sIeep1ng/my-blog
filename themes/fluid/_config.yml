@@ -783,12 +783,12 @@ disqus:
   # The following are Disqusjs configurations, please ignore if DisqusJS is not required, it supports filling in multiple apikeys, it is recommended to build the API endpoint by yourself
   # See: https://github.com/SukkaW/DisqusJS
   disqusjs: false
-  apikey: 
+  apikey:
     - 'KEY1'
     #- 'KEY2'
   api: https://disqus.skk.moe/disqus/
-  admin: 
-  adminLabel: 
+  admin:
+  adminLabel:
 
 # Gitalk
 # 基于 GitHub Issues
@@ -897,10 +897,10 @@ cusdis:
 # Based on GitHub Discussions, similar to Utterances
 # See: https://giscus.app/
 giscus:
-  repo:
-  repo-id:
-  category:
-  category-id:
+  repo: sIeep1ng/my-blog
+  repo-id: R_kgDORXashQ
+  category: Announcements
+  category-id: DIC_kwDORXashc4C3GF5
   theme-light: light
   theme-dark: dark
   mapping: pathname
