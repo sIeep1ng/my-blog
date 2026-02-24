@@ -1,0 +1,39 @@
+/* =========================================
+   1. 信息密度控制：强制隐藏首页文章预览内容
+   ========================================= */
+.index-info .index-excerpt {
+  display: none !important;
+}
+
+/* 修正隐藏预览后，标题与底部元数据（日期/标签）之间的间距塌陷 */
+.index-info .index-header {
+  margin-bottom: 1rem !important; 
+}
+
+/* =========================================
+   2. 主体 UI 结构优化：现代悬浮卡片质感 (深色模式适配)
+   ========================================= */
+.board {
+  /* 增加圆角半径，破除原有的锐利死板感 */
+  border-radius: 16px !important;
+  /* 引入多层级的弥散阴影，构建 Z 轴的立体悬浮感 */
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2), 
+              0 2px 6px rgba(0, 0, 0, 0.08) !important;
+  /* (可选) 增加极微弱的白色内发光边框，提升暗黑模式下的边缘锐度 */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* =========================================
+   3. 首页文章列表卡片的悬浮反馈 (Hover 交互)
+   ========================================= */
+.index-card {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.index-card:hover {
+  /* 鼠标悬浮时产生轻微的位移和底色高亮 */
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.03); 
+}
